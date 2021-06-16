@@ -25,19 +25,4 @@ Compte admin : admin@admin.fr
 Psw admin : admin15
 </br>
 </br>
-Compte User :
-</br>
-</br>
-lancer le frontend avec : npm run start
-</br>
-</br>
-Compte admin : admin@admin.fr
-</br>
-</br>
-Psw admin : admin15
-</br>
-</br>
-Compte User :
-</br>
-</br>
-Psw User :
+
