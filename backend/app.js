@@ -4,6 +4,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const path = require('path');
 const helmet = require('helmet');
+const session = require('cookie-session');
 
 mongoose.connect(process.env.MONGO_URI, {  useNewUrlParser: true,
     useUnifiedTopology: true })
@@ -21,6 +22,18 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
   });
+
+  const expiryDate = new Date(Date.now() + 3600000); // 1 heure (60 * 60 * 1000)
+  app.use(session({
+    name: 'session',
+    secret: process.env.SEC_SES,
+    cookie: {
+      secure: true,
+      httpOnly: true,
+      domain: 'http://localhost:3000',
+      expires: expiryDate
+    }
+  }));
 
 app.use(bodyParser.json());
 
