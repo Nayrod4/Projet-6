@@ -1,6 +1,23 @@
 Installation
 
 Cloner ce projet depuis Github
+
+Faire tourner la base de donnée Mongo DB et configurer le .env:
+
+    Crée un fichier .env à la racine du dossier backend.
+
+    Aprés avoir crée un compte sur MongoDB, crée un cluster, un compte de connection a se fameu cluster. 
+    
+    Puis relevez votre méthode de conection en remplissant le .env de cette facons :
+
+    MONGO_URI = 'mongodb+srv://NomDuCompte:MotDePasse@NomDuCluster.vsi3u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    
+    Enfin pour que cookie session fonctionne, vous aurez besoin d'entrer une clef dans le fichier .env sous ce format :
+
+    SEC_SES="VotreClef"
+    nb: la clef peut etre n'importe qu'elle valeur.
+
+    
     
 Faire tourner le Frontend :
 
