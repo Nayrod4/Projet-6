@@ -36,10 +36,4 @@ Faire tourner le Backend :
     Puis lancez le serveur: "nodemon server".
 
 
-Compte admin : admin@admin.fr
-</br>
-</br>
-Psw admin : admin15
-</br>
-</br>
 
