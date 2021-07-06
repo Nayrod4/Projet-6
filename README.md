@@ -12,10 +12,15 @@ Faire tourner la base de donnée Mongo DB et configurer le .env:
 
     MONGO_URI = 'mongodb+srv://NomDuCompte:MotDePasse@NomDuCluster.vsi3u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
     
-    Enfin pour que cookie session fonctionne, vous aurez besoin d'entrer une clef dans le fichier .env sous ce format :
+    Pour que cookie session fonctionne, vous aurez besoin d'entrer une clef dans le fichier .env sous ce format :
 
     SEC_SES="VotreClef"
     nb: la clef peut etre n'importe qu'elle valeur.
+
+    Enfin pour que le secret token de jwt fonctionne rajouter dans le .env ceci :
+
+    SEC_TOKEN="Votre clef"
+    nb: la clef peut aussi etre n'importe qu'elle valeur.
 
     
     
