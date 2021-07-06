@@ -34,6 +34,3 @@ Faire tourner le Backend :
     Ouvrir le terminal sur le dossier backend et exécuter "npm install" pour installer les dépendances.
     
     Puis lancez le serveur: "nodemon server".
-
-
-
