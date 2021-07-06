@@ -55,11 +55,11 @@ exports.getAllSauces =  (req, res, next) => {
 
 exports.likeDislike = (req, res, next) => {
 
-  let like = req.body.like
+  const like = req.body.like
 
-  let userId = req.body.userId
+  const userId = req.body.userId
 
-  let sauceId = req.params.id
+  const sauceId = req.params.id
 
   if (like === 1) { 
     Sauce.updateOne({
