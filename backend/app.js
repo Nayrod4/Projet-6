@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const helmet = require('helmet');
 const session = require('cookie-session');
+const nocache = require('nocache');
 
 mongoose.connect(process.env.MONGO_URI, {  useNewUrlParser: true,
     useUnifiedTopology: true })
@@ -44,5 +45,6 @@ app.use('/api/sauces', sauceRoutes);
 app.use('/api/auth', userRoutes);
 
 app.use(helmet());
+app.use(nocache());
 
 module.exports = app;
