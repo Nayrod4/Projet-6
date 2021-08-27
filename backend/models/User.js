@@ -9,8 +9,9 @@ const userSchema = mongoose.Schema({
   password: { type: String, required: [true, "Veuillez choisir un mot de passe"] },
 });
 
+/// Valeur Unique
 userSchema.plugin(uniqueValidator);
-
+/// Désinfection les champs du modèle avant save dans la DB
 userSchema.plugin(sanitizerPlugin);
-
+/// Le modèle s'appellera user et on lui passe le shéma de données
 module.exports = mongoose.model('User', userSchema);
