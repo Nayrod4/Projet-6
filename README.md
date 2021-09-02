@@ -5,7 +5,7 @@
 
 Cloner ce projet depuis Github
 
-### :bulb: Faire tourner la base de donnée Mongo DB et configurer le .env:
+<h2> :bulb: Faire tourner la base de donnée Mongo DB et configurer le .env : </h2>
 
 Crée un fichier `.env` à la racine du dossier backend.
 
@@ -28,7 +28,7 @@ nb: la clef peut aussi etre n'importe qu'elle valeur.
 
     
     
-### :bulb: Faire tourner le Frontend :
+<h2> :bulb: Faire tourner le Frontend : </h2>
 
 Ouvrir le terminal sur le dossier frontend et exécuter `npm install` pour installer les dépendances.
     
