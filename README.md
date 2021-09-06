@@ -5,13 +5,13 @@
 
 Cloner ce projet depuis Github
 
-<h2> :bulb: Faire tourner la base de donnée Mongo DB et configurer le .env : </h2>
+<h2> :bulb: Faire tourner la base de données Mongo DB et configurer le .env : </h2>
 
 Crée un fichier `.env` à la racine du dossier backend.
 
-Aprés avoir crée un compte sur MongoDB, crée un cluster, un compte de connection a se fameu cluster. 
+Aprés avoir créé un compte sur MongoDB, créé un cluster, un compte de connexion a se fameux cluster. 
 
-Puis relevez votre méthode de conection en remplissant le .env de cette facons :
+Puis relevez votre méthode de conexion en remplissant le .env de cette facons :
 
 `MONGO_URI = 'mongodb+srv://NomDuCompte:MotDePasse@NomDuCluster.vsi3u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'`
     
